@@ -1,0 +1,20 @@
+version: 0.2
+
+env:
+  variables:
+    TEST: "test"
+
+phases:
+  install:
+    commands:
+      - echo "install"
+  pre_build:
+    commands:
+      - echo "pre-build"
+  build:
+    commands:
+      - echo "build"
+      - echo $TEST
+  post_build:
+    commands:
+      - echo "build"
